@@ -4,20 +4,18 @@ header {
     padding: 20px;
     text-align: center;
     font-size: 1.5em;
+    margin-top: 20px;
 }
 body {
     color: #151515;
     font-family: "Skranji", system-ui;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
-.contenedor {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+#contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 ul {
     color: #151515;
@@ -27,33 +25,63 @@ ul {
     height: 100px;
     justify-content: space-between;
     padding-block-end: 50px;
-    display: flex;
 }
-li {
-            margin: 15px;
-            width: 100px;         
-            background-color: #f9f9f9; 
-            border: 2px solid #ccc; 
-            border-radius: 5px;
-            padding: 20px; 
-            justify-content: center;
+.metrics {
+    margin: 15px;
+    width: 100px;         
+    background-color: #f9f9f9; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    padding: 20px; 
+    font-family: "Skranji", system-ui;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 textarea[name="user-input"] {
     width: 60%;
     height: 150px;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     background-color: #f9f9f9;
     resize: vertical;
 } 
-button {
-    margin-top:15px;
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#reset-button {
+    margin:15px;
     width: 200px;
     height:30px;
     background-color:#44e2d2;
     color: white;
-    border: 1px solid;
-    border-radius: 15px;
-  }
+    border: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Skranji", system-ui;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+    #reset-button:hover {
+    background-color: #3cc2b2;
+    }
+    
+    footer {
+    font-family: "Skranji", system-ui;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    bottom: 0;
+}

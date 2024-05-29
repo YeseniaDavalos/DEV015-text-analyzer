@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <script src="index.js" type="module"></script>
   <header>
-    <h1>Analizador de texto</h1>
+    <h1 data-testid="title">Analizador de texto</h1>
   </header>
-  <div class="contenedor">
-  <ul>
-    <li>Caracteres:</li>
-    <li>Números:</li>
-    <li>Caracteres Sin Espacios:</li>
-    <li>Suma números:</li>
-    <li>Palabras:</li>
-    <li>Promedio longitud:</li>
-  </ul>
-</div>
-  <form action="">
-  <textarea name="user-input" id="" cols="30" rows="10"></textarea>
+  <div id="contenedor">
+    <ul>
+      <li class="metrics" data-testid="character-count">Caracteres:</li>
+      <li class="metrics" data-testid="number-count">Números:</li>
+      <li class="metrics" data-testid="character-no-spaces-count">Caracteres Sin Espacios:</li>
+      <li class="metrics" data-testid="number-sum">Suma números:</li>
+      <li class="metrics" data-testid="word-count">Palabras:</li>
+      <li class="metrics" data-testid="word-length-average">Promedio longitud:</li>
+    </ul>
+  </div>
+  <textarea name="user-input" cols="30" rows="10" data-testid="text-input"></textarea>
   <br>
   <br>
-  <button id="reset-button">Limpiar métricas</button>
-  </form>
+  <div id="button-container">
+    <button id="reset-button">Limpiar métricas</button>
+  </div>
   <br>
   <br>
   <footer>
-    <p>Yesenia Dávalos</p>
+    <p data-testid="footer">Yesenia Dávalos Buitrago</p>
   </footer>
-  
 </body>
 </html>
