@@ -28,7 +28,7 @@ const analyzer = {
   },
 
   getCharacterCountExcludingSpaces: (text) => {
-    const textWithoutSpaces = text.replace(/\s+/g, '');
+    const textWithoutSpaces = text.replace(/[^a-zA-Z0-9]/g, '');
     return textWithoutSpaces.length;
   },
 
